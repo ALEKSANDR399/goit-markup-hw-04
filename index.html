@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="ДЗ№3">
+    <meta name="description" content="ДЗ№4">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
         integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -14,7 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
-    <title>ДЗ№3</title>
+    <title>ДЗ№4</title>
 </head>
 
 <body>
@@ -26,17 +26,25 @@
             <nav>
                 <!--Меню навигации-->
                 <ul class="ul-nav">
-                    <li class="ul-nav-li"><a href="" class="nav-menu menu">Студия</a></li>
-                    <li class="ul-nav-li"><a href="portfolio.html" class="nav-menu menu">Портфолио</a></li>
-                    <li class="ul-nav-li"><a href="" class="nav-menu menu">Контакты</a></li>
+                    <li class="ul-nav-li"><a href="" class="nav-menu menu link">Студия</a></li>
+                    <li class="ul-nav-li"><a href="portfolio.html" class="nav-menu menu link">Портфолио</a></li>
+                    <li class="ul-nav-li"><a href="" class="nav-menu menu link">Контакты</a></li>
                 </ul>
             </nav>
             <!--Контакты-->
             <ul class="ul-contacts">
-                <li class="mail"><a href="mailto:info@devstudio.com" class="nav-mail menu"> <span class="mail-style menu">
+                <li class="mail mail-group">
+                    <a href="mailto:info@devstudio.com" class="nav-mail menu-mail link"> <span class="mail-style menu-mail ">
+                        <svg class="mail-icon icon-contacts mail-logo" tabindex="0" aria-label="mail">
+                        <use href="../img/sprite.svg#icon-envelope"></use>
+                        </svg>
                             info@devstudio.com</span></a>
                 </li>
-                <li class="tel"><a href="tel:+380961111111" class="nav-tel menu">+380961111111</a></li>
+                <li class="tel tel-group"><a href="tel:+380961111111" class="nav-tel menu-tel link">
+                    <svg class="tel-icon" tabindex="0" aria-label="tel">
+                        <use href="../img/sprite.svg#icon-phone"></use>
+                    </svg>
+                    +380961111111</a></li>
             </ul>
         </div>
     </header>
@@ -54,24 +62,36 @@
                 <ul class="main-list container">
                     <!--Сильные стороны команды-->
                     <li class="main-list-item">
+                        <svg class="title-icons" tabindex="0" aria-label="antena">
+                            <use href="../img/sprite.svg#icon-antenna" width="70" height="70" ></use>
+                        </svg>
                         <h3 class="head-item">ВНИМАНИЕ К ДЕТАЛЯМ</h3>
                         <p class="head-text">
                             Идейные соображения, а также начало повседневной работы по формированию позиции.
                         </p>
                     </li>
                     <li class="main-list-item">
+                        <svg class="title-icons" tabindex="0" aria-label="clock">
+                            <use href="../img/sprite.svg#icon-clock"  width="70" height="70"></use>
+                        </svg>
                         <h3 class="head-item">ПУНКТУАЛЬНОСТЬ</h3>
                         <p class="head-text">
                             Задача организации, в особенности же рамки и место обучения кадров влечет за собой
                         </p>
                     </li>
                     <li class="main-list-item">
+                        <svg class="title-icons" tabindex="0" aria-label="diagram">
+                            <use href="../img/sprite.svg#icon-diagram" width="70" height="70"></use>
+                        </svg>
                         <h3 class="head-item">ПЛАНИРОВАНИЕ</h3>
                         <p class="head-text">
                             Равным образом консультация с широким активом в значительной степени обуславливает.
                         </p>
                     </li>
                     <li class="main-list-item">
+                        <svg class="title-icons" tabindex="0" aria-label="astronaut">
+                            <use href="../img/sprite.svg#icon-astronaut" width="70" height="70"></use>
+                        </svg>
                         <h3 class="head-item">СОВРЕМЕННЫЕ ТЕХНОЛОГИИ</h3>
                         <p class="head-text">
                             Значимость этих проблем настолько очевидна, что реализация плановых заданий.
@@ -100,6 +120,12 @@
                         <div class="img-text">
                             <h3 class="name">Игорь Демьяненко</h3>
                             <p class="proffesion">Product Designer</p>
+                            <ul>
+                                <li><a href=""></a></li>
+                                <li><a href=""></a></li>
+                                <li><a href=""></a></li>
+                                <li><a href=""></a></li>
+                            </ul>
                         </div>
                     </li>
                     <li class="li-personal two-man">
@@ -130,14 +156,14 @@
     <footer class="footer">
         <div class="container footer-container">
             <div class="logo-block">
-                <a href="" class="footer-logo footer-link">Web<span class="logo-style">Studio</span></a>
+                <a href="" class="footer-logo footer-link link">Web<span class="logo-style">Studio</span></a>
             </div>
             <address class="address">
                 <ul class="footer-list">
-                    <li class="footer-contacts"> <a href="https://goo.gl/maps/wmigcwDh6VgQxwut9" class="footer-place footer-link"> г. Киев, пр-т Леси
+                    <li class="footer-contacts"> <a href="https://goo.gl/maps/wmigcwDh6VgQxwut9" class="footer-place footer-link link"> г. Киев, пр-т Леси
                             Украинки, 26</a></li>
-                    <li class="footer-contacts"><a href="mailto:info@example.com" class="footer-mail footer-link">info@example.com</a></li>
-                    <li class="footer-contacts"><a href="tel:+380961111111" class="footer-tel footer-link">+38 096 111 11 11</a></li>
+                    <li class="footer-contacts"><a href="mailto:info@example.com" class="footer-mail footer-link link">info@example.com</a></li>
+                    <li class="footer-contacts"><a href="tel:+380961111111" class="footer-tel footer-link link">+38 096 111 11 11</a></li>
                 </ul>
             </address>
         </div>

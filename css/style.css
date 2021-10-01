@@ -14,26 +14,9 @@ body {
   background-color: var(--basic-color);
   color: var(--basic-text-color);
 }
-/* font-family: 'Raleway', sans-serif;
-font-family: 'Roboto', sans-serif; */
 
-.nav-menu,
-.nav-mail,
-.nav-tel,
-.footer-link,
-.section-link {
+.link {
   text-decoration: none;
-}
-
-.ul-nav,
-.ul-contacts,
-.main-list,
-.list-about,
-.list-personal,
-.footer-list,
-.list-btn,
-.section-list {
-  list-style: none;
 }
 
 p,
@@ -49,6 +32,7 @@ h6 {
 ul {
   margin: 0px;
   padding: 0;
+  list-style: none;
 }
 
 img {
@@ -120,15 +104,62 @@ img {
 .ul-contacts {
   display: flex;
   flex-wrap: wrap;
-  padding-left: 331px;
+  padding-left: 305px;
 }
 
 .mail {
-  padding-right: 50px;
+  padding-right: 30px;
+}
+
+.mail-group {
+  display: flex;
+}
+.menu-mail,
+.menu-tel {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.menu-mail:hover,
+.menu-mail:focus {
+  color: var(--link-hover-color);
+}
+
+.menu-mail:hover .mail-logo {
+  fill: var(--link-hover-color);
+}
+
+.icon-contacts {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  fill: var(--basic-text-color);
 }
 
 .mail-style {
   color: var(--basic-text-color);
+}
+
+.tel-group {
+  display: flex;
+}
+
+.tel-icon {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  fill: var(--basic-text-color);
+}
+
+.menu-tel:hover,
+.menu-tel:focus {
+  color: var(--link-hover-color);
+}
+
+.menu-tel:hover .tel-icon {
+  fill: var(--link-hover-color);
 }
 
 .nav-tel {
@@ -139,9 +170,15 @@ img {
 
 .hero {
   max-width: 1600px;
-  background-image: linear-gradient
-      (to right, rgba(47, 48, 58, 0.4) rgba(47, 48, 58, 0.4)),
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
     url(../img/hero.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   padding-top: 200px;
   padding-bottom: 200px;
 }
@@ -162,9 +199,6 @@ img {
   letter-spacing: 0.06em;
   text-align: center;
   max-width: 696px;
-}
-
-.button-block {
 }
 
 .button {
@@ -197,6 +231,16 @@ img {
   display: flex;
 }
 
+.title-icons {
+  width: 270px;
+  height: 120px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  padding-left: 100px;
+  padding-top: 25px;
+  margin-bottom: 30px;
+}
+
 .head-item {
   font-weight: 700;
   font-size: 14px;
@@ -207,6 +251,8 @@ img {
 .main-list-item {
   max-width: 270px;
   margin-left: 30px;
+  display: flex;
+  flex-direction: column;
 }
 
 .main-list-item:not(:last-child) {
@@ -372,9 +418,6 @@ img {
 }
 
 /* -----------------------------------------Portfolio-main----------------------- */
-
-.section-btn-list {
-}
 
 .list-btn {
   display: flex;
