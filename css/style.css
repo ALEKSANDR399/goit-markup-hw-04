@@ -169,7 +169,7 @@ img {
 /* ------------------------hero-------------------------- */
 
 .hero {
-  max-width: 1600px;
+  /* max-width: 1600px; */
   background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.4),
@@ -317,6 +317,7 @@ img {
 .social-list {
   display: flex;
   justify-content: center;
+  margin-top: 16px;
 }
 
 .social-personal-list + .social-personal-list {
@@ -326,17 +327,33 @@ img {
 .social-personal-list {
   width: 44px;
   height: 44px;
-  background-color: red;
 }
 
 .social-link {
   width: 100%;
   height: 100%;
-  display: flex;
+  display: block;
   border-radius: 50%;
   background-color: #fff;
+  display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--link-hover-color);
+}
+
+.social-link:hover .social-icons,
+.social-link:focus .social-icons {
+  fill: var(--basic-color);
+}
+
+.social-icons {
+  width: 20px;
+  height: 20px;
+  fill: #afb1b8;
 }
 
 .list-personal {
@@ -365,8 +382,6 @@ img {
   line-height: 1.19;
   color: var(--secondary-text-color);
   text-align: center;
-  /* margin-top: 30px;
-  margin-bottom: 10px; */
 }
 
 .proffesion {
@@ -375,13 +390,68 @@ img {
   line-height: 1.19;
   color: var(--basic-text-color);
   text-align: center;
-  /* padding-bottom: 30px; */
 }
 
 .img-text {
   padding-top: 30px;
   padding-bottom: 30px;
 }
+
+.section-partners {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.partners-title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  color: var(--secondary-text-color);
+  margin-bottom: 50px;
+}
+
+.partners-list {
+  display: flex;
+}
+
+.partners-items {
+  width: 170px;
+  height: 92px;
+  border-radius: 4px;
+  display: flex;
+}
+
+.partners-items + .partners-items {
+  margin-left: 30px;
+}
+
+.partners-link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+
+.partners-link:hover,
+.partners-link:focus {
+  border-color: var(--link-hover-color);
+}
+
+.partners-link:hover .partner-icons,
+.partners-link:focus .partner-icons {
+  fill: var(--link-hover-color);
+}
+
+.partner-icons {
+  width: 106px;
+  height: 60px;
+  fill: #afb1b8;
+}
+
 /* --------------------------------footer------------------------------- */
 .footer {
   background-color: var(--secondary-color);
@@ -391,6 +461,10 @@ img {
 
 .logo-block {
   margin-bottom: 20px;
+}
+
+.footer-container {
+  display: flex;
 }
 
 .footer-logo {
@@ -416,6 +490,11 @@ img {
   margin-bottom: 9px;
 }
 
+.footer-social {
+  margin-left: 70px;
+  justify-content: center;
+}
+
 .footer-place {
   font-weight: 400;
   font-size: 14px;
@@ -429,6 +508,11 @@ img {
   font-size: 14px;
   line-height: 1.71;
   color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-social {
+  display: flex;
+  flex-direction: column;
 }
 
 /* -------------------------------------Portfolio-navigation-------------------------- */
