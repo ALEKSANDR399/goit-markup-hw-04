@@ -219,6 +219,7 @@ img {
 .button:hover {
   background-color: var(--basic-color);
   color: var(--secondary-text-color);
+  cursor: pointer;
 }
 
 /* --------------------------main-section------------------------------- */
